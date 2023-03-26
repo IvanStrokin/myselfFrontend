@@ -5,7 +5,8 @@ class Header extends React.Component {
     render() {
         return (
             <div className="headerWrapper">
-                <h1>Header</h1>
+                <h1>Я-САМ</h1> 
+                
             </div>
         );
     }
