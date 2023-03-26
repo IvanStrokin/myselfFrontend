@@ -1,0 +1,15 @@
+body{
+    background-color: #6F8EEF;
+    font-family: 'Source Code Pro';
+    font-style: normal;
+}
+
+.headerWrapper {
+    background-color: rgb(233, 244, 244);
+    width: 1200px;
+}
+
+.mainWrapper {
+    background-color: beige;
+    width: 1200px;
+}
