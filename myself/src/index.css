@@ -1,16 +1,5 @@
 body{
-    background-color: white;
+    background-color:#6F8EEF;
     font-family: 'Source Code Pro';
     font-style: normal;
-}
-
-.headerWrapper {
-
-    width: 100%;
-    padding: 1px;
-}
-
-.mainWrapper {
-    
-    width: 100%;
 }

@@ -1,14 +1,21 @@
 import React from "react"
-import Header from './components/header/header'
-import Profile from "./components/profile/profile"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Header } from "./Components/Header/Header";
+import  Profile  from "./Components/Pages/Profile/profile";
 
 class App extends React.Component {
     render() {
         return(
-            <div className="mainWrapper"> 
-                <Header />
-                <Profile />
-            </div>
+            <BrowserRouter>
+                <div className="App">
+                    <Header  />
+                    <Routes>
+                    <Route path='/' element={<Profile/>} />
+                    <Route path='/activity' />
+                    <Route path='/events'   />
+                    </Routes> 
+                </div>
+            </BrowserRouter>
         )
     }
      

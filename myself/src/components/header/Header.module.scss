@@ -1,0 +1,33 @@
+.wrapper{
+    border-radius: 9px;
+    width: 100%;
+    background: #fff;
+}
+.header{
+    border-radius: 9px;
+    padding: 10px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    .menu{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color .4s;
+            &:hover{
+                font-size: 110%;
+                padding: 5px;
+                color: rgb(117, 117, 250);
+                border: 1px solid rgb(117, 117, 250) ;
+            }
+        }
+    }
+}
