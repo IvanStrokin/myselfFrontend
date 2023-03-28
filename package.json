@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "d3.js": "^0.0.2-security",
     "react-vis": "^1.11.12"
   }
 }
