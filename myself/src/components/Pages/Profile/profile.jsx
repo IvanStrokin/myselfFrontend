@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './profile.module.scss'
+import s from './Profile.module.scss'
 import userCard from '../../userCard/userCard'
 
 class Profile extends React.Component {
