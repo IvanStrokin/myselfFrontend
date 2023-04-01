@@ -3,12 +3,40 @@
    height: 100%;
    width: 100%;
    margin : auto;
+   padding: auto;
    display: flex;
+   justify-content: center;
 }
 
+.nameWrap {
+   font-size: 300%;
+   padding: 5px;
+   font-family: sans-serif ;
+   text-align: center;
+   margin: auto;
+
+}
+
+.desciptionWrap {
+   margin: auto;
+   font-family: cursive;
+   text-align: center;
+   padding: auto;
+   font-size: 200%;
+   justify-content: center;
+   display: flex;
+   position: flex;
+   margin-right: 100px;
+}
+
+.imgWrap{
+   border-radius: 15px;
+   padding: 0;
+}
 
 .userCard{
    width: 100%;
+   padding: 13px;
     border-radius: 9px;
     overflow: hidden;
     display: flex;
@@ -20,22 +48,14 @@
     padding: 4px;
     margin: 5px auto;
     align-items: center;
+    justify-content: space-between;
     img{
+      align-content: left;
+      border-radius: 15px;
       height: 400px;
       padding: 10px;
     }
+
 }
 
-.nameWrap {
-   font-size: 300%;
-   padding: 5px;
-   font-family: sans-serif ;
-   text-align: center;
-}
 
-.desciptionWrap {
-   font-family: cursive;
-   text-align: center;
-   padding: 0 12px 0 190px;
-   font-size: 200%;
-}

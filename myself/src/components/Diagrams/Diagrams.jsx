@@ -24,8 +24,8 @@ class Diagram extends React.Component {
                     <PolarGrid />
                     <PolarAngleAxis dataKey="name" />
                     <PolarRadiusAxis />
-                    <Radar dataKey="x" stroke="green"
-                        fill="green" fillOpacity={0.5} />
+                    <Radar dataKey="x" stroke="blue"
+                        fill="blue" fillOpacity={0.4} />
                 </RadarChart>
         )
     }
