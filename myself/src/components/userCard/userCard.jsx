@@ -1,29 +1,29 @@
-import React from 'react'
+import React from "react";
+import {  pulse,  } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 import s from './userCard.module.scss'
 
+export const UserCard = (data) => {
 
-class userCard extends React.Component {
-    render(){
-        return(
-            <div className={s.wrapper}>
-                <span>
-                <div className={s.imgWrap}>
-                    <img src = "" alt=""/>
-                </div>
-                </span>
-                <span>
-                <div className={s.nameWrap}>
-                    <h3>Строкин  Иван</h3>
-                </div>
-                </span>
-                <span>
-                <div className={s.desciptionWrap}>
-                    <>Дотер студент политеха и другие диагнозы</>
-                </div>
-                </span>
+    const Pulse = styled.div`animation: .6s ${keyframes`${pulse}`} `
+    
+    const user = data.data
+
+    return (
+        <div className={s.userCard}>
+            <div className={s.imgWrap}>
+                <Pulse><img src={user.avatar} /></Pulse>
             </div>
-        )
-    }
-}
 
-export default userCard
+            <div className={s.textWrap}>
+                <div className={s.nameWrap}>
+                    <h3><Pulse>{user.first_name} {user.last_name} </Pulse></h3>
+                    <Pulse><h6>Birthday <br />{user.birthday}</h6></Pulse>
+                </div>
+                <div className={s.desciptionWrap}>
+                    <Pulse>{user.status}</Pulse>
+                </div>
+            </div>
+        </div>
+    )
+}

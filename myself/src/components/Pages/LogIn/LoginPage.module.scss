@@ -1,0 +1,19 @@
+.wrapper{
+    background-color: white;
+    border-radius: 10PX;
+    width: 400px;
+    padding: 15px;
+    margin: 100PX auto;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    a{
+        font-size: 250%;
+        text-decoration: none;
+        color: black;
+    }
+}

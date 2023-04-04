@@ -1,17 +1,16 @@
 import React, { useEffect } from 'react'
-import s from './Profile.module.scss'
+import s from './EventsPage.module.scss'
 import { useSelector } from 'react-redux';
-import { UserCard } from '../../UserCard/UserCard'
+import { Event } from '../../Events/Events';
 
 
-
-export default function Profile() {
+export default function EventsPage() {
 
     const user = useSelector(state => state.userInfo.user)
 
     return (
         <div className={s.wrapper}>
-            <UserCard data={user} />
+            <Event data={user} />
         </div>
     )
 }

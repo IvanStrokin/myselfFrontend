@@ -1,37 +1,29 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { pulse, } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 import s from './Events.module.scss'
 
 
-data = [
-    {
-        name : " Забег",
+export const Event = (data) => {
 
-    }
+    const Pulse = styled.div`animation: .6s ${keyframes`${pulse}`} `
+    const user = data.data
 
-]
+    return (
 
-export const Card = () => {
-    return(
-        <NavLink  className={s.wrapper}>
+        <div className={s.eventCard}>
             <div className={s.imgWrap}>
+                <Pulse><img src={user.avatar} /></Pulse>
             </div>
-            <div className={s.content}>
-                <span>
-                    <h1 className={s.name}>{data.name}</h1>
-                    <p className={s.status}>
-                        <span>{data.status}-{data.species}</span>
-                    </p>
-                </span>
-                <p className={s.location}>
-                    <span>Last known location:</span>
-                    <p>{data.location.name}</p>
-                </p>
-                <p className={s.episode}>
-                    <span>Fist seen in:</span>
-                    <p>Mortynight Run</p>
-                </p>
+            <div className={s.textWrap}>
+                <div className={s.nameWrap}>
+                    <h3><Pulse>{user.first_name} {user.last_name} </Pulse></h3>
+                    <Pulse><h6> <br />{user.birthday}</h6></Pulse>
+                </div>
+                <div className={s.desciptionWrap}>
+                    <Pulse>{user.status}</Pulse>
+                </div>
             </div>
-        </NavLink>
+        </div>
     )
 }

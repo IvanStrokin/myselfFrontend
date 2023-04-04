@@ -1,34 +1,52 @@
 .wrapper{
-    border-radius: 9px;
+    border-radius: 10px;
     width: 100%;
     background: #fff;
+    padding: 0;
 }
 .header{
     border-radius: 9px;
-    padding: 10px 40px;
+    padding: 2px 40px;
     max-width: 1920px;
     margin: 0 0 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    @media screen and (max-width: 960px) {
+        font-size: 60%;
+    }
+
+    h1{
+         color:   rgb(117, 117, 250);
+    }
+
 
     .menu{
+
         font-size: 130%;
         display: flex;
         gap: 20px;
         align-items: center;
+
+
+        @media screen and (max-width: 960px) {
+            gap: 10px;
+        }
+
+       
         a{
             color: black;
             font-weight: bold;
             text-decoration: none;
-            transition: color .4s;
+            transition: color .5s;
             &:hover{
-                font-size: 110%;
+                font-size: 100%;
                 padding: 5px;
                 color: rgb(117, 117, 250);
                 border: 1px solid rgb(117, 117, 250) ;
             }
         }
     }
+    
 }
