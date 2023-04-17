@@ -1,24 +1,29 @@
+import { mainAPI } from "../api/api"
 
-const defaultState = {
-    user  : {
-        id: 2,
-        first_name: "Janet",
-        last_name: "Weaver",
-        avatar: "https://reqres.in/img/faces/2-image.jpg",
-        birthday: "26 apr 2001",
-        status : "Really like socer and swimming"
-    }
-}
+const SET_USER = 'SET_USER'
+
+const defaultState = {}
+
+const setUser = (user) => ({type: SET_USER, user})
 
 const userReducer  = (state = defaultState, action) => {
     switch (action.type){
-        case  "SET_USER":
+        case  SET_USER:
             return {...state, user: action.user}
         default:
             return state
     }
 }
 
+export const requestUser = (id) => async (dispatch) =>{
+    const response = await mainAPI.getUser(id)
+    if(response.status === 200){
+        dispatch(setUser(response.data))
+    }
+}
 
+const data = requestUser(0);
+
+console.log(data);
 
 export default userReducer

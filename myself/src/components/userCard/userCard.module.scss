@@ -1,4 +1,5 @@
 .textWrap {
+   margin: 0 15px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -30,7 +31,7 @@
 .desciptionWrap {
    border :4px solid black;
    border-style: none dashed none dashed ;
-   margin: auto;
+   margin: 25px;
    text-align: center;
    padding: 20px 20px;
    font-size: 200%;
