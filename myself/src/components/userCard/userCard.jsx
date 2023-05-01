@@ -4,19 +4,20 @@ import { pulse, } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import s from './userCard.module.scss'
 
+
 export const UserCard = (id) => {
 
-    const baseURL = "http://localhost:8081/users/1"
     const Pulse = styled.div`animation: .6s ${keyframes`${pulse}`} `
+    const baseURL = `http://localhost:8081/users/${1}`
 
     const [post, setPost] = React.useState(null);
 
     React.useEffect(() => {
-      axios.get(baseURL).then((response) => {
-        setPost(response.data);
-      });
+        axios.get(baseURL).then((response) => {
+            setPost(response.data);
+        });
     }, []);
-  
+
     if (!post) return null;
 
     const user = post
