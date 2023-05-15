@@ -1,0 +1,16 @@
+.container {
+  padding: 1rem;
+  max-width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitBtn {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #43cc79;
+  color: #fff;
+  cursor: pointer;
+}

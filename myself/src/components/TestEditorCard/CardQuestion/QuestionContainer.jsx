@@ -1,7 +1,7 @@
 import {Question} from "./Question";
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {changeQuestionText} from "../../../../reducer/RadioSlice";
+import {changeQuestionText} from "../../../reducer/RadioSlice";
 
 export const QuestionContainer = ({cardId}) => {
     const [questionTextInput, setQuestionTextInput] = useState('')

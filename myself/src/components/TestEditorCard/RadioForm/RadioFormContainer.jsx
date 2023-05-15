@@ -5,7 +5,7 @@ import {
     updateRadioCategory,
     updateRadioCategoryWeight,
     updateRadioText
-} from "../../../../reducer/RadioSlice";
+} from "../../../reducer/RadioSlice";
 
 export const RadioFormContainer = ({cardId}) => {
     const {radios} = useSelector(state => state.radioReducer.cards.find(card => card.id === cardId))

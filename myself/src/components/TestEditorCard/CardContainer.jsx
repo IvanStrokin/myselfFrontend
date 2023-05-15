@@ -1,6 +1,6 @@
 import {useDispatch} from "react-redux";
 import {Card} from "./Card";
-import {createRadio, deleteCard} from "../../../reducer/RadioSlice";
+import {createRadio, deleteCard} from "../../reducer/RadioSlice";
 
 export const CardContainer = ({cardId}) => {
     const dispatch = useDispatch()

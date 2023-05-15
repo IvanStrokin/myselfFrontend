@@ -1,13 +1,14 @@
 import React from "react"
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import {Header} from "./Components/Header/Header";
-import Profile from "./Components/Pages/Profile/Profile";
-import Activities from "./Components/Pages/Activities/Activities";
-import EventsPage from "./Components/Pages/Events/EventsPage";
-import {LoginPage} from "./Components/Pages/LogIn/LoginPage";
-import {EditUser} from "./Components/Pages/RegisterPage/registre";
-import {TestingPage} from "./Components/Pages/Testingpage/TestingPage";
-import { UserLoginPage } from "./Components/Pages/UserLoginPage/UserLoginPage";
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Header} from "./components/header/header";
+import Profile from "./components/Pages/Profile/profile";
+import Activities from "./components/Pages/Activities/Activities";
+import {LoginPage} from "./components/Pages/LogIn/LoginPage";
+import EventsPage from "./components/Pages/Events/EventsPage";
+import {EditUser} from "./components/Pages/RegisterPage/registre";
+import {UserLoginPage} from "./components/Pages/UserLoginPage/UserLoginPage";
+import {TestingPage} from "./components/Pages/TestingPage/TestingPage";
+
 
 class App extends React.Component {
     render() {

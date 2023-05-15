@@ -1,13 +1,11 @@
-import s from "./TestingPage.module.scss";
+import s from "./TestEditorPage.module.scss";
 import {useDispatch, useSelector} from "react-redux";
 import {createCard} from "../../../reducer/RadioSlice";
-import {CardContainer} from "../TestCard/CardContainer";
+import {CardContainer} from "../../TestEditorCard/CardContainer";
 
-export const TestingPage = () => {
+export const TestEditorPage = () => {
     const {cards} = useSelector(state => state.radioReducer)
     const dispatch = useDispatch()
-    const {id} = useSelector(state => state.testReducer)
-    console.log(id)
 
     return (
         <div className={s.container}>
