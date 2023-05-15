@@ -6,6 +6,7 @@ import Activities from './Components/Pages/Activities/Activities'
 import EventsPage from "./Components/Pages/Events/EventsPage";
 import { LoginPage } from "./Components/Pages/LogIn/LoginPage";
 import { EditUser } from "./Components/Pages/RegisterPage/registre";
+import { TestingPage } from "./Components/Pages/Testingpage/TestingPage";
 
 
 class App extends React.Component {
@@ -20,6 +21,7 @@ class App extends React.Component {
                             <Route path='/events' element={[<Header />, <EventsPage/>]}/>
                             <Route path='/' element={[<LoginPage/>]}/>
                             <Route path='/registration' element={[<EditUser/>]}/>
+                            <Route path='/testing' element={[<Header />, <TestingPage/>]}/>
                         </Routes>
                     </div>
                 </BrowserRouter>
