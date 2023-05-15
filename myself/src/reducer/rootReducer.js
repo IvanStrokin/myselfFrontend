@@ -1,5 +1,7 @@
 import { combineReducers } from "redux";
+import userSlicer from "./userSlicer";
 
-const rootReducer = () => {
-    
-}
+
+export const rootReducer = combineReducers({
+    userId :  userSlicer,
+})

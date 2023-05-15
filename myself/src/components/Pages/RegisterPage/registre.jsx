@@ -2,13 +2,14 @@ import { useState } from 'react';
 import React  from "react";
 import s from './Registre.module.scss'
 import { useCreateUserMutation } from '../../../api/api';
+import { Link, NavLink } from "react-router-dom";
 
 export const EditUser = () => {
 
     const male = "мужской"
     const female = "женский"
 
-    const [dataState, setData] = useState(
+    const [dataState] = useState(
         {
             "firstName": "",
             "lastName": "",
@@ -46,7 +47,7 @@ export const EditUser = () => {
                 <input type="radio" id="Female" name="sex" onClick={() => dataState.sex = female}/>
                 <label htmlFor="Female">Женский</label>
                 <br/>
-                <button type="button" onClick={() => registration()}>Зарегестрироваться</button>
+              <NavLink to="/" > <button type="button" onClick={() => registration()}>Зарегестрироваться</button></NavLink>  
             </form>
         </div>
     )
