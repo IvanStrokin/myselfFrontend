@@ -7,17 +7,15 @@ import { NavLink } from "react-router-dom";
 export const LoginPage = () => {
     return (
         <div>
-            <div className={s.wrapper}>
-                <NavLink to="/profile">Войти пользователю</NavLink>
+            <div className={s.greatens}>
+                <h1>Добро пожаловать на платформу "Я САМ"!</h1>
+                <h2>Чтобы продолжить войдите или зарегестрируйтесь</h2>
             </div>
+            <NavLink to="/userLogin" className={s.wrapper}> Войти как пользователь </NavLink>
 
-            <div className={s.wrapper}>
-                <NavLink to="/profile">Войти HKO</NavLink>
-            </div>
+            <NavLink to="/profile" className={s.wrapper}> Войти HKO </NavLink>
 
-            <div className={s.wrapper}>
-                <NavLink to="/registration">Регистрация</NavLink>
-            </div>
+            <NavLink to="/registration" className={s.wrapper}>Регистрация</NavLink>
         </div>
 
     )

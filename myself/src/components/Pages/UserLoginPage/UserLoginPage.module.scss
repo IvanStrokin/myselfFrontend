@@ -1,0 +1,29 @@
+.wrapper{
+    width : 600px;
+    background-color: white;
+    padding: 15px;
+    margin: 250px auto;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    width: 400px;
+    font-size: 150%;
+}
+
+label{
+    width:  400px;
+    text-align: center;
+    font-size: 150%;
+}
+
+button {
+    border-radius: 5px;
+    font-size: 150%;
+    padding: 5px 40px;
+}

@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-
 const userSlicer  = createSlice({
     name : "userId",
 
@@ -10,7 +9,7 @@ const userSlicer  = createSlice({
 
     reducers: {
         setUserId(state, action) {
-            state.id = action
+            state.id = action.payload
         },
     },
 })
