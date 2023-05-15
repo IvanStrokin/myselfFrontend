@@ -1,42 +1,38 @@
-import axios from "axios";
 import React from "react";
 import { pulse, } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import s from './userCard.module.scss'
+import { useGetUserByIdQuery, } from "../../api/api";
+
 
 
 export const UserCard = (id) => {
 
+
+    const { data = {}, isLoading } = useGetUserByIdQuery(id.id);
+
     const Pulse = styled.div`animation: .6s ${keyframes`${pulse}`} `
-    const baseURL = `http://localhost:8081/users/${1}`
 
-    const [post, setPost] = React.useState(null);
-
-    React.useEffect(() => {
-        axios.get(baseURL).then((response) => {
-            setPost(response.data);
-        });
-    }, []);
-
-    if (!post) return null;
-
-    const user = post
+    if (isLoading) return (<h1 className={s.desciptionWrap}>Loading...</h1>)
 
     return (
         <div className={s.userCard}>
             <div className={s.imgWrap}>
-                <Pulse><img src={user.imageUrl} alt="avatar here" /></Pulse>
+                <Pulse><img src={data.imageUrl} alt="avatar here" /></Pulse>
             </div>
 
             <div className={s.textWrap}>
                 <div className={s.nameWrap}>
-                    <h3><Pulse>{user.firstName} {user.lastName} </Pulse></h3>
-                    <Pulse><h6>Birthday <br />{user.birthday}</h6></Pulse>
+                    
+                    <h3><Pulse>{data.firstName} {data.lastName} </Pulse></h3>
+                    <Pulse><h6>Birthday <br />{data.birthday}</h6></Pulse>
                 </div>
                 <div className={s.desciptionWrap}>
-                    <Pulse>{user.description}</Pulse>
+                    <Pulse>{data.description}</Pulse>
                 </div>
+                
             </div>
+            
         </div>
     )
 }

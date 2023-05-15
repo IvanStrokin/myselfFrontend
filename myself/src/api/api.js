@@ -1,11 +1,29 @@
-import axios from "axios";
+import { createApi,  fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
-const instance = axios.create({
-    baseURL: 'http://localhost:8081'
-})
+const baseURL = "http://localhost:8081/"
 
-export const mainAPI = {
-    getUser(id){
-        return instance.get(`/users/${id}`)
-    },
-}
+export const yasamApi = createApi({
+    reducerPath: "yasamApi",
+    baseQuery: fetchBaseQuery({
+        baseUrl: baseURL,
+      }),
+    endpoints: (builder) => ({
+        getUserById : builder.query({
+            query: (id) => `users/${id}`
+        }),
+        createUser: builder.mutation({
+            query: (body) => ({
+              url:  'users',
+              method: 'POST',
+              body,
+            }),
+            invalidatesTags : [ 'users' ],
+          }),
+    }),
+});
+
+export const { useGetUsersQuery, useCreateUserMutation, useGetUserByIdQuery } = yasamApi
+
+
+
+

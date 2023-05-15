@@ -9,9 +9,6 @@ import {
 
 export default function Diagram() {
 
-    // const dispatch = useDispatch()
-    // const data = useSelector(state => state.userActivities.activities)
-
     const baseURL = `http://localhost:8081/statistics/2`
 
     const [post, setPost] = React.useState(null);
@@ -60,7 +57,6 @@ export default function Diagram() {
 
     const data = secData
 
-    console.log(data);
 
     return (
 

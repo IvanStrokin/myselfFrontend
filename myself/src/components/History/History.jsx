@@ -53,47 +53,7 @@ const History = () => {
         <Doughnut data={data} />
       </div>
     </div>
-
   )
-
-  // const [state, setstate] = useState({ data: SetData(allHistory) })
-
-  // const ChangeOnSport = () => {
-  //   setstate({ data: SetData(sportHistory) })
-  // }
-
-  // const ChangeOnEducation = () => {
-  //   setstate({ data: SetData(educationHistory) })
-  // }
-
-  // const ChangeOnCulture = () => {
-  //   setstate({ data: SetData(cultureHistory) })
-  // }
-
-  // const ChangeOnMedicine = () => {
-  //   setstate({ data: SetData(madicineHistory) })
-  // }
-
-  // const ChangeOnAll = () => {
-  //   setstate({ data: SetData(allHistory) })
-  // }
-
-  // return (
-  //   <div className={s.historyWrapper}>
-  //     <div className={s.diagram}>
-  //       <Doughnut data={state.data} />
-  //     </div>
-
-  //     <div className={s.buttonWrap}>
-  //       <button onClick={ChangeOnAll} type="button">Активность </button>
-  //       <button onClick={ChangeOnSport} type="button">Спорт </button>
-  //       <button onClick={ChangeOnEducation} type="button">Образование </button>
-  //       <button onClick={ChangeOnMedicine} type="button">Медицина </button>
-  //       <button onClick={ChangeOnCulture} type="button">Культура </button>
-  //     </div>
-  //   </div>
-  // )
-
 };
 
 export default History;

@@ -5,9 +5,20 @@ import { Header } from "../../Header/Header";
 
 
 export const LoginPage = () => {
-    return(
-        <div className={s.wrapper}>
-            <NavLink to="/profile">Войти</NavLink>
+    return (
+        <div>
+            <div className={s.wrapper}>
+                <NavLink to="/profile">Войти пользователю</NavLink>
+            </div>
+
+            <div className={s.wrapper}>
+                <NavLink to="/profile">Войти HKO</NavLink>
+            </div>
+
+            <div className={s.wrapper}>
+                <NavLink to="/registration">Регистрация</NavLink>
+            </div>
         </div>
+
     )
 }
