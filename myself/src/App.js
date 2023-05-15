@@ -1,13 +1,12 @@
 import React from "react"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Header } from "./Components/Header/Header";
-import Profile from "./Components/Pages/Profile/Profile";
-import Activities from './Components/Pages/Activities/Activities'
-import EventsPage from "./Components/Pages/Events/EventsPage";
-import { LoginPage } from "./Components/Pages/LogIn/LoginPage";
-import { EditUser } from "./Components/Pages/RegisterPage/registre";
-import { TestingPage } from "./Components/Pages/Testingpage/TestingPage";
-
+import {Header} from "./components/header/header";
+import Profile from "./components/Pages/Profile/profile";
+import Activities from "./components/Pages/Activities/Activities";
+import EventsPage from "./components/Pages/Events/EventsPage";
+import {LoginPage} from "./components/Pages/LogIn/LoginPage";
+import {EditUser} from "./components/Pages/RegisterPage/registre";
+import {TestingPage} from "./components/Pages/Testingpage/TestingPage";
 
 class App extends React.Component {
 
@@ -25,7 +24,6 @@ class App extends React.Component {
                         </Routes>
                     </div>
                 </BrowserRouter>
-    
         )
     }
 

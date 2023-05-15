@@ -1,7 +1,6 @@
-import  {React} from 'react'
-import s from './Profile.module.scss'
-import { UserCard } from '../../UserCard/UserCard'
-import { useState } from 'react'
+import React from 'react'
+import s from './profile.module.scss'
+import {UserCard} from "../../userCard/userCard";
 
 
 export default function Profile() {

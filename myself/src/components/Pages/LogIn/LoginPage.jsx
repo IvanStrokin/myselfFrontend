@@ -1,7 +1,6 @@
 import React from "react";
 import s from './LoginPage.module.scss'
-import { NavLink } from "react-router-dom";
-import { Header } from "../../Header/Header";
+import {NavLink} from "react-router-dom";
 
 
 export const LoginPage = () => {

@@ -11,7 +11,7 @@ export const Header = () => {
                     <NavLink to="/profile">Профиль</NavLink>
                     <NavLink to="/activity">История активностей</NavLink>
                     <NavLink to="/events">Лента мероприятий</NavLink>
-                    <NavLink to="/"> Пройти тест</NavLink>
+                    <NavLink to="/testing"> Пройти тест</NavLink>
                     <NavLink to="/"> Выйти</NavLink>
                 </div>  
             </div>

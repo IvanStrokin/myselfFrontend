@@ -1,0 +1,31 @@
+.categoriesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.numberInput {
+  width: 2rem;
+  height: 2rem;
+
+  border: #2e8c56 2px solid;
+  border-radius: 0.5rem;
+
+  outline: none;
+
+  text-align: center;
+
+  transition: 0.1s all linear;
+}
+
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.numberInput:focus {
+  border: #43cc79 2px solid;
+}
