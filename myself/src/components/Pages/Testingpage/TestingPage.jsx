@@ -6,6 +6,8 @@ import {CardContainer} from "../TestCard/CardContainer";
 export const TestingPage = () => {
     const {cards} = useSelector(state => state.radioReducer)
     const dispatch = useDispatch()
+    const {id} = useSelector(state => state.testReducer)
+    console.log(id)
 
     return (
         <div className={s.container}>

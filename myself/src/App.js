@@ -9,7 +9,6 @@ import {EditUser} from "./components/Pages/RegisterPage/registre";
 import {TestingPage} from "./components/Pages/Testingpage/TestingPage";
 
 class App extends React.Component {
-
     render() {
         return (
                  <BrowserRouter>
