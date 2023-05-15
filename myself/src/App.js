@@ -10,7 +10,6 @@ import {TestingPage} from "./Components/Pages/Testingpage/TestingPage";
 import { UserLoginPage } from "./Components/Pages/UserLoginPage/UserLoginPage";
 
 class App extends React.Component {
-
     render() {
         return (
                  <BrowserRouter>
