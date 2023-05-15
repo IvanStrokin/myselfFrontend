@@ -1,8 +1,6 @@
-import  {React} from 'react'
-import s from './Profile.module.scss'
-import { UserCard } from '../../UserCard/UserCard'
-import { useState } from 'react'
-import { useSelector } from 'react-redux'
+import React from 'react'
+import s from './profile.module.scss'
+import {UserCard} from "../../userCard/userCard";
 
 
 export default function Profile() {
